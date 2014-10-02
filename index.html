@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+
+<div class="mpc-2000xl">
+<div class="left-half" style="order: 0">
+<div class="screen">
+    <div class="display"></div>
+</div>
+
+<div class="fn-buttons flexbox">
+    <div style="order: 0;">
+        <span class="fn-label">F1</span>
+        <br/>
+        <button class="fn-btn">&nbsp;</button>
+    </div>
+
+    <div style="order: 1;">
+        <span class="fn-label">F2</span>
+        <br/>
+        <button class="fn-btn">&nbsp;</button>
+    </div>
+
+    <div style="order: 2;">
+        <span class="fn-label">F3</span>
+        <br/>
+        <button class="fn-btn">&nbsp;</button>
+    </div>
+
+    <div style="order: 3;">
+        <span class="fn-label">F4</span>
+        <br/>
+        <button class="fn-btn">&nbsp;</button>
+    </div>
+
+    <div style="order: 4;">
+        <span class="fn-label">F5</span>
+        <br/>
+        <button class="fn-btn">&nbsp;</button>
+    </div>
+
+    <div style="order: 5;">
+        <span class="fn-label">F6</span>
+        <br/>
+        <button class="fn-btn">&nbsp;</button>
+    </div>
+</div>
+<br/><br/>
+
+<div class="flexbox">
+    <div id="numeric-pad">
+        <div class="numeric-pad flexbox">
+            <div style="order: 0;">
+                <span class="fn-label">7</span>
+                <br/>
+                <button class="fn-btn">&nbsp;</button>
+            </div>
+
+            <div style="order: 1;">
+                <span class="fn-label">8</span>
+                <br/>
+                <button class="fn-btn">&nbsp;</button>
+            </div>
+
+            <div style="order: 2;">
+                <span class="fn-label">9</span>
+                <br/>
+                <button class="fn-btn">&nbsp;</button>
+            </div>
+        </div>
+        <div class="numeric-pad flexbox">
+            <div style="order: 0;">
+                <span class="fn-label">4</span>
+                <br/>
+                <button class="fn-btn">&nbsp;</button>
+            </div>
+
+            <div style="order: 1;">
+                <span class="fn-label">5</span>
+                <br/>
+                <button class="fn-btn">&nbsp;</button>
+            </div>
+
+            <div style="order: 3;">
+                <span class="fn-label">6</span>
+                <br/>
+                <button class="fn-btn">&nbsp;</button>
+            </div>
+        </div>
+        <div class="numeric-pad flexbox">
+            <div style="order: 0;">
+                <span class="fn-label">3</span>
+                <br/>
+                <button class="fn-btn white">&nbsp;</button>
+            </div>
+
+            <div style="order: 1;">
+                <span class="fn-label">2</span>
+                <br/>
+                <button class="fn-btn">&nbsp;</button>
+            </div>
+
+            <div style="order: 3;">
+                <span class="fn-label">1</span>
+                <br/>
+                <button class="fn-btn white">&nbsp;</button>
+            </div>
+        </div>
+
+        <div class="bottom-left flexbox">
+            <div class="slider" style="order: 0;">
+                <div class="text-center" style="background: #d7d8d2; margin-top: -0.75em; padding: 0 5px">
+                    <span style="font-size: 0.5em;">NOTE VARIATION</span><br/>
+                </div>
+                <div class="text-center">
+                    <center>
+                        <span style="font-size: 0.5em;">AFTER</span>
+
+                        <div class="note-var-led"></div>
+                        <button class="fn-btn white btn-after">&nbsp;</button>
+                        <div class="fader">
+                            <div class="fader-knob">
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+            <div style="order: 1"></div>
+        </div>
+    </div>
+
+    <div class="data-wheel" style="order: 1">
+        <center>
+            <div class="main-buttons flexbox">
+                <div style="order: 0">
+                    <span>MAIN SCREEN</span><br/>
+                    <button class="main-btn">&nbsp;</button>
+                </div>
+                <div style="order: 1">
+                    <span>OPEN WINDOW</span><br/>
+                    <button class="open-window">&nbsp;</button>
+                </div>
+            </div>
+        </center>
+
+        <div class="wheel">
+            <div class="thumb-hole"></div>
+        </div>
+
+        <div class="tap-tempo">
+            <span>TAP TEMPO</span>
+            <br/>
+            <button class="tempo-btn white">&nbsp;</button>
+        </div>
+
+        <div class="flexbox">
+            <div class="undo-seq" style="order: 0">
+                <center>
+                    <span class="fn-label">UNDO SEQ</span>
+                    <br/>
+
+                    <div class="note-var-led"></div>
+                    <button class="fn-btn white" style="margin-top: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </center>
+            </div>
+
+            <div class="erase" style="order: 1">
+                <center>
+                    <span class="fn-label">ERASE</span>
+                    <br/>
+                    <button class="fn-btn white" style="margin-top: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </center>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <center><span>CURSOR</span></center>
+            <div class="flexbox">
+                <div style="order: 0">
+                    <button class="arrow-left">&lt;</button>
+                </div>
+                <div style="order: 1">
+                    <button class="arrow-up">^</button>
+                    <br/>
+                    <button class="arrow-down">v</button>
+                </div>
+                <div style="order: 2">
+                    <button class="arrow-right">&gt;</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="locate flexbox">
+            <div style="order: 0">
+                <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            </div>
+            <div style="order: 1">
+                <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            </div>
+            <div style="order: 2">
+                <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            </div>
+            <div style="order: 3">
+                <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            </div>
+            <div style="order: 4">
+                <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            </div>
+        </div>
+
+        <div class="record-play flexbox">
+            <div style="order: 0">
+                <center>
+                    <div class="note-var-led" style="display: inline-block"></div>
+                    <span>REC</span>
+                    <button class="fn-btn red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </center>
+            </div>
+            <div style="order: 1">
+                <center>
+                    <div class="note-var-led" style="display: inline-block"></div>
+                    <span>OVERDUB</span>
+                    <button class="fn-btn red">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </center>
+            </div>
+            <div style="order: 2">
+                <center>
+                    <span>STOP</span>
+                    <button class="fn-btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </center>
+            </div>
+            <div style="order: 3">
+                <center>
+                    <div class="note-var-led" style="display: inline-block"></div>
+                    <span>PLAY</span>
+                    <button class="fn-btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </center>
+            </div>
+            <div style="order: 4">
+                <center>
+                    <span>PLAY/START</span>
+                    <button class="fn-btn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                </center>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="right-half" style="order: 1">
+    <h2 style="color: #a1322a; margin-left: 8.75em;">AKAI</h2>
+
+    <div class="top-right flexbox">
+        <div style="order: 0;">
+            <div class="flexbox" style="padding: 0.5em; background: #efefef">
+                <div style="order: 0; margin-right: 1.5em;">
+                    <center>
+                        <span class="fn-label" style="font-size: 0.7em">FULL LEVEL</span>
+                        <br/>
+
+                        <div class="note-var-led"></div>
+                        <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    </center>
+                </div>
+                <div style="order: 1">
+                    <center>
+                        <span class="fn-label" style="font-size: 0.7em">16 LEVELS</span>
+                        <br/>
+
+                        <div class="note-var-led"></div>
+                        <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    </center>
+                </div>
+            </div>
+            <div class="top-right-btns flexbox" style="padding: 0.5em; background: #efefef; margin-top: 1em;">
+                <div style="order: 0; margin-right: 1.5em;">
+                    <center>
+                        <span class="fn-label" style="font-size: 0.7em">FULL LEVEL</span>
+                        <br/>
+
+                        <div class="note-var-led"></div>
+                        <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    </center>
+                </div>
+                <div style="order: 1">
+                    <center>
+                        <span class="fn-label" style="font-size: 0.7em">16 LEVELS</span>
+                        <br/>
+
+                        <div class="note-var-led"></div>
+                        <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="flexbox" style="order: 1; margin-left: auto">
+            <div style="order: 0">
+                <center>
+                    <span class="knob-label">REC GAIN</span><br/>
+                    <button class="record-knob">|</button>
+                </center>
+            </div>
+            <div style="order: 1">
+                <center>
+                    <span class="knob-label">MAIN VOLUME</span><br/>
+                    <button class="volume-knob">|</button>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div class="flexbox bank-buttons" style="order: 0">
+        <div style="order: 0;">
+            <center>
+                <span class="fn-label" style="font-size: 0.7em">A</span>
+                <br/>
+
+                <div class="note-var-led"></div>
+                <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            </center>
+        </div>
+        <div style="order: 1">
+            <center>
+                <span class="fn-label" style="font-size: 0.7em">B</span>
+                <br/>
+
+                <div class="note-var-led"></div>
+                <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            </center>
+        </div>
+        <div style="order: 2">
+            <center>
+                <span class="fn-label" style="font-size: 0.7em">C</span>
+                <br/>
+
+                <div class="note-var-led"></div>
+                <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            </center>
+        </div>
+        <div style="order: 3">
+            <center>
+                <span class="fn-label" style="font-size: 0.7em">D</span>
+                <br/>
+
+                <div class="note-var-led"></div>
+                <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            </center>
+        </div>
+    </div>
+
+    <div class="drum-pads">
+        <div class="pad-row flexbox">
+            <button class="pad" style="order: 0"></button>
+            <button class="pad" style="order: 1"></button>
+            <button class="pad" style="order: 2"></button>
+            <button class="pad" style="order: 3"></button>
+        </div>
+        <div class="pad-row flexbox">
+            <button class="pad" style="order: 0"></button>
+            <button class="pad" style="order: 1"></button>
+            <button class="pad" style="order: 2"></button>
+            <button class="pad" style="order: 3"></button>
+        </div>
+        <div class="pad-row flexbox">
+            <button class="pad" style="order: 0"></button>
+            <button class="pad" style="order: 1"></button>
+            <button class="pad" style="order: 2"></button>
+            <button class="pad" style="order: 3"></button>
+        </div>
+        <div class="pad-row flexbox">
+            <button class="pad" style="order: 0"></button>
+            <button class="pad" style="order: 1"></button>
+            <button class="pad" style="order: 2"></button>
+            <button class="pad" style="order: 3"></button>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/mpc.js"></script>
+</body>
+</html>
