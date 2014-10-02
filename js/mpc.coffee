@@ -12,7 +12,6 @@ $ ->
         wheel.css "-webkit-transform", "rotate(" + deg + "deg)"
         wheel.css "-o-transform", "rotate(" + deg + "deg)"
         wheel.css "-ms-transform", "rotate(" + deg + "deg)"
-        return
 
     # Record Gain Knob Binding
     recDeg = 0
@@ -23,11 +22,11 @@ $ ->
         else
             recDeg -= 10
 
-        recordKnob.css "-moz-transform", "rotate(" + recDeg + "deg)"
-        recordKnob.css "-webkit-transform", "rotate(" + recDeg + "deg)"
-        recordKnob.css "-o-transform", "rotate(" + recDeg + "deg)"
-        recordKnob.css "-ms-transform", "rotate(" + recDeg + "deg)"
-        return
+        if recDeg >= -150 && recDeg <= 150
+            recordKnob.css "-moz-transform", "rotate(" + recDeg + "deg)"
+            recordKnob.css "-webkit-transform", "rotate(" + recDeg + "deg)"
+            recordKnob.css "-o-transform", "rotate(" + recDeg + "deg)"
+            recordKnob.css "-ms-transform", "rotate(" + recDeg + "deg)"
 
     # Volume Knob Binding
     volDeg = 0
@@ -38,10 +37,9 @@ $ ->
         else
             volDeg -= 10
 
-        volumeKnob.css "-moz-transform", "rotate(" + volDeg + "deg)"
-        volumeKnob.css "-webkit-transform", "rotate(" + volDeg + "deg)"
-        volumeKnob.css "-o-transform", "rotate(" + volDeg + "deg)"
-        volumeKnob.css "-ms-transform", "rotate(" + volDeg + "deg)"
-        return
+        if volDeg >= -150 && volDeg <= 150
+            volumeKnob.css "-moz-transform", "rotate(" + volDeg + "deg)"
+            volumeKnob.css "-webkit-transform", "rotate(" + volDeg + "deg)"
+            volumeKnob.css "-o-transform", "rotate(" + volDeg + "deg)"
+            volumeKnob.css "-ms-transform", "rotate(" + volDeg + "deg)"
 
-    return
