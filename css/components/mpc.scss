@@ -21,13 +21,25 @@
 
 .screen {
   height: 8em;
-  width: 22em;
+  width: 24em;
   background: #111;
-  padding: 3em 5em;
+  padding: 3em 4em;
 
   .display {
-    height: 8em;
-    background: #fff;
+    line-height: 1.15em;
+    padding: 0.5em;
+    font-family: lcd, monospace;
+    height: 7em;
+    background: #b0b8a2;
+    color: #69518f;
+    -webkit-box-shadow: 0 0 10px #fff;
+    -moz-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+
+    .selected {
+      background: #69518f;
+      color: #b0b8a2;
+    }
   }
 }
 
@@ -139,6 +151,7 @@ div.data-wheel {
 }
 
 .bank-leds.active {
+  background: #a1ffac;
   background: #a1ffac;
 }
 
