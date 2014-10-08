@@ -294,7 +294,7 @@
             <div class="top-right-btns flexbox" style="padding: 0.5em; background: #efefef; margin-top: 1em;">
                 <div style="order: 0; margin-right: 1.5em;">
                     <center>
-                        <span class="fn-label" style="font-size: 0.7em">FULL LEVEL</span>
+                        <span class="fn-label" style="font-size: 0.7em">NEXT SEQ</span>
                         <br/>
 
                         <div class="note-var-led"></div>
@@ -303,7 +303,7 @@
                 </div>
                 <div style="order: 1">
                     <center>
-                        <span class="fn-label" style="font-size: 0.7em">16 LEVELS</span>
+                        <span class="fn-label" style="font-size: 0.7em">TRACK MUTE</span>
                         <br/>
 
                         <div class="note-var-led"></div>
@@ -333,8 +333,8 @@
                 <span class="fn-label" style="font-size: 0.7em">A</span>
                 <br/>
 
-                <div class="note-var-led"></div>
-                <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                <div id="led-bank-a" class="note-var-led bank-leds active"></div>
+                <button id="bank-a" class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
             </center>
         </div>
         <div style="order: 1">
@@ -342,8 +342,8 @@
                 <span class="fn-label" style="font-size: 0.7em">B</span>
                 <br/>
 
-                <div class="note-var-led"></div>
-                <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                <div id="led-bank-b" class="note-var-led bank-leds"></div>
+                <button id="bank-b" class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
             </center>
         </div>
         <div style="order: 2">
@@ -351,8 +351,8 @@
                 <span class="fn-label" style="font-size: 0.7em">C</span>
                 <br/>
 
-                <div class="note-var-led"></div>
-                <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                <div id="led-bank-c" class="note-var-led bank-leds"></div>
+                <button id="bank-c" class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
             </center>
         </div>
         <div style="order: 3">
@@ -360,8 +360,8 @@
                 <span class="fn-label" style="font-size: 0.7em">D</span>
                 <br/>
 
-                <div class="note-var-led"></div>
-                <button class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                <div id="led-bank-d" class="note-var-led bank-leds"></div>
+                <button id="bank-d" class="fn-btn white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
             </center>
         </div>
     </div>
@@ -398,5 +398,6 @@
 
 <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/mpc.js"></script>
+<script src="js/drum-pads.js"></script>
 </body>
 </html>

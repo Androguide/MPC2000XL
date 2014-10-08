@@ -117,6 +117,9 @@ div.data-wheel {
   border: 1px solid #999;
   padding: 0 .5em 0.5em; }
 
+.bank-leds.active {
+  background: #a1ffac; }
+
 .note-var-led {
   background: #54865c;
   height: 0.25em;
