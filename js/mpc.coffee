@@ -58,7 +58,7 @@ $ ->
             source = context.createBufferSource()
             source.buffer = savedBuffer
             source.connect context.destination
-            if source.start then source.start 0 else source.noteOn 0 # Play sound immediately
+            source.noteOn 0
             return
 
         xhr = new XMLHttpRequest()
@@ -87,8 +87,8 @@ $ ->
     kickPad9 = new PadTrigger("pad-9","assets/samples/kicks/kick_cr78_2.wav");
     tambPad10 = new PadTrigger("pad-10","assets/samples/tambourines/tamb_cr78_1.wav");
     snarePad11 = new PadTrigger("pad-11","assets/samples/snares/snare_cr78_2.wav");
-    bongoPad12 = new PadTrigger("pad-8","assets/samples/bongos/bongo_cr78_2.wav");
+    bongoPad12 = new PadTrigger("pad-12","assets/samples/bongos/bongo_cr78_2.wav");
     kickPad13 = new PadTrigger("pad-13","assets/samples/kicks/kick_cr78_3.wav");
     openHatPad14 = new PadTrigger("pad-14","assets/samples/open-hats/open-hat_cr78_1.wav");
     snarePad15 = new PadTrigger("pad-15","assets/samples/snares/snare_cr78_3.wav");
-    bongoPad16 = new PadTrigger("pad-8","assets/samples/bongos/bongo_cr78_3.wav");
+    bongoPad16 = new PadTrigger("pad-16","assets/samples/bongos/bongo_cr78_3.wav");

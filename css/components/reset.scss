@@ -1,0 +1,13 @@
+body {
+  background: #2981a7;
+  padding: 2%;
+  font-family: sans-serif;
+}
+
+button {
+  outline: none;
+
+  &:hover, &:focus {
+    outline: none;
+  }
+}

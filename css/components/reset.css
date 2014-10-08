@@ -1,0 +1,9 @@
+body {
+  background: #2981a7;
+  padding: 2%;
+  font-family: sans-serif; }
+
+button {
+  outline: none; }
+  button:hover, button:focus {
+    outline: none; }

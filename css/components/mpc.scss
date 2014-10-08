@@ -1,19 +1,5 @@
-@import url(../assets/fonts/stylesheet.css);
-body {
-  background: #2981a7;
-  padding: 2%;
-  font-family: sans-serif; }
-
-button {
-  outline: none; }
-  button:hover, button:focus {
-    outline: none; }
-
-.flexbox {
-  display: flex; }
-
 .mpc-2000xl {
-  background: #d7d8d2;
+  background: $beige;
   width: 75em;
   height: 52.5em;
   padding-left: 4em;
@@ -30,71 +16,102 @@ button {
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
-  user-select: none; }
+  user-select: none;
+}
 
 .screen {
   height: 8em;
   width: 22em;
   background: #111;
-  padding: 3em 5em; }
-  .screen .display {
+  padding: 3em 5em;
+
+  .display {
     height: 8em;
-    background: #fff; }
+    background: #fff;
+  }
+}
 
 .fn-buttons {
   margin-top: 1em;
   display: flex;
   margin-left: 5em;
   margin-right: auto;
-  width: 22em; }
-  .fn-buttons span {
+  width: 22em;
+
+  span {
     padding: 1px 5px;
     margin-left: 4px;
     background: #98a7ce;
-    font-size: 0.7em; }
-  .fn-buttons button {
-    margin-top: 6px;
-    height: 1em;
-    width: 2em; }
-  .fn-buttons div {
-    text-align: center;
-    width: 5em; }
+    font-size: 0.7em;
+  }
 
-.numeric-pad {
-  margin-bottom: 1em;
-  text-align: center; }
-  .numeric-pad div {
-    text-align: center;
-    width: 4em; }
-  .numeric-pad span {
-    font-size: 0.65em;
-    padding-left: 6px; }
-  .numeric-pad button {
+  button {
     margin-top: 6px;
     height: 1em;
     width: 2em;
-    background: #1a58a1; }
-    .numeric-pad button.white {
-      background: #e9efe3; }
+  }
+
+  div {
+    text-align: center;
+    width: 5em;
+  }
+}
+
+.numeric-pad {
+  margin-bottom: 1em;
+  text-align: center;
+
+  div {
+    text-align: center;
+    width: 4em;
+  }
+
+  span {
+    font-size: 0.65em;
+    padding-left: 6px;
+  }
+
+  button {
+    margin-top: 6px;
+    height: 1em;
+    width: 2em;
+    background: #1a58a1;
+
+    &.white {
+      background: #e9efe3;
+    }
+  }
+}
 
 div.data-wheel {
   text-align: center;
   width: 15em;
-  max-height: 20em; }
-  div.data-wheel span {
-    font-size: 0.5em; }
-  div.data-wheel .main-buttons {
-    margin-bottom: 1em; }
-    div.data-wheel .main-buttons div {
+  max-height: 20em;
+
+  span {
+    font-size: 0.5em;
+  }
+
+  .main-buttons {
+    margin-bottom: 1em;
+
+    div {
       width: 5em;
       margin-left: auto;
-      margin-right: auto; }
-    div.data-wheel .main-buttons button {
+      margin-right: auto;
+    }
+
+    button {
       width: 3em;
-      height: 1.5em; }
-  div.data-wheel .open-window {
-    background: #dc8f55; }
-  div.data-wheel .wheel {
+      height: 1.5em;
+    }
+  }
+
+  .open-window {
+    background: #dc8f55;
+  }
+
+  .wheel {
     background: #23292d;
     height: 4em;
     width: 4em;
@@ -103,7 +120,9 @@ div.data-wheel {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    padding: 1.75em; }
+    padding: 1.75em;
+  }
+}
 
 .thumb-hole {
   background: #41484c;
@@ -111,11 +130,13 @@ div.data-wheel {
   width: 2em;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border-radius: 50%; }
+  border-radius: 50%;
+}
 
 .slider {
   border: 1px solid #999;
-  padding: 0 .5em 0.5em; }
+  padding: 0 .5em 0.5em;
+}
 
 .note-var-led {
   background: #54865c;
@@ -123,31 +144,38 @@ div.data-wheel {
   width: 0.25em;
   border-radius: 50%;
   margin-top: 0.2em;
-  margin-bottom: 0.4em; }
+  margin-bottom: 0.4em;
+}
 
 .btn-after {
   width: 2.5em;
-  height: 1.25em; }
+  height: 1.25em;
+}
 
 .bottom-left {
-  margin-top: 2em; }
+  margin-top: 2em;
+}
 
 .fader {
   margin-top: 2em;
   margin-bottom: 2em;
   width: 0.3em;
   height: 7em;
-  background: #222; }
+  background: #222;
+}
 
 .fader-knob {
   width: 2.5em;
   background: #e3edef;
   margin-left: -1.2em;
   margin-top: 3.5em;
-  padding: 0.8em 0; }
-  .fader-knob .line {
+  padding: 0.8em 0;
+
+  .line {
     background: #3b7bce;
-    height: 0.1em; }
+    height: 0.1em;
+  }
+}
 
 .pad {
   height: 7em;
@@ -156,18 +184,21 @@ div.data-wheel {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  margin: 0.5em; }
+  margin: 0.5em;
+}
 
 .drum-pads {
   margin: 2em 1.3em 2em 13em;
   padding: 1em 2em;
-  background: #a5a9b0; }
+  background: #a5a9b0;
+}
 
 .top-right {
   margin-left: 13em;
   margin-right: 1.2em;
   background: #a5a9b0;
-  padding: 2em 2em 1em; }
+  padding: 2em 2em 1em;
+}
 
 .record-knob, .volume-knob {
   width: 4em;
@@ -180,9 +211,12 @@ div.data-wheel {
   color: #626068;
   font-weight: bold;
   padding-bottom: 43.5%;
-  outline: none; }
-  .record-knob:active, .record-knob:focus, .volume-knob:active, .volume-knob:focus {
-    outline: none; }
+  outline: none;
+
+  &:active, &:focus {
+    outline: none;
+  }
+}
 
 .record-knob {
   background-color: #daaba7;
@@ -190,7 +224,8 @@ div.data-wheel {
   margin-top: 5px;
   -webkit-box-shadow: 0 0 8px #333;
   -moz-box-shadow: 0 0 8px #333;
-  box-shadow: 0 0 8px #333; }
+  box-shadow: 0 0 8px #333;
+}
 
 .volume-knob {
   background-color: #f1f6f2;
@@ -198,78 +233,106 @@ div.data-wheel {
   margin-top: 5px;
   -webkit-box-shadow: 0 0 8px #333;
   -moz-box-shadow: 0 0 8px #333;
-  box-shadow: 0 0 8px #333; }
+  box-shadow: 0 0 8px #333;
+}
 
 .knob-label {
-  font-size: 0.75em; }
+  font-size: 0.75em;
+}
 
 .bank-buttons {
   margin-left: 30em;
   margin-top: -4em;
-  margin-bottom: 4em; }
-  .bank-buttons > div {
-    margin-right: 1.5em; }
+  margin-bottom: 4em;
+
+  &>div {
+    margin-right: 1.5em;
+  }
+}
 
 .tap-tempo {
   float: left;
   margin-left: -3.5em;
-  margin-top: 1.5em; }
+  margin-top: 1.5em;
+}
 
 .tempo-btn {
   height: 2.5em;
-  width: 2.75em; }
+  width: 2.75em;
+}
 
 .arrows {
   float: right;
   margin-top: -4.75em;
-  margin-right: 4.5em; }
+  margin-right: 4.5em;
+}
 
 .arrow-left, .arrow-right {
   height: 4em;
-  width: 2em; }
+  width: 2em;
+}
 
 .arrow-right {
-  margin-left: -0.25em; }
+  margin-left: -0.25em;
+}
 
 .arrow-up {
   width: 2.5em;
-  height: 2em; }
+  height: 2em;
+}
 
 .arrow-down {
   margin-left: -0.3em;
   width: 3em;
   height: 2.38em;
-  font-size: 0.7em; }
+  font-size: 0.7em;
+}
 
 .undo-seq {
   float: left;
   margin-top: 6em;
-  margin-left: -3.5em; }
-  .undo-seq .note-var-led {
+  margin-left: -3.5em;
+
+  .note-var-led {
     margin-top: 0.1em;
-    margin-bottom: 0.2em; }
+    margin-bottom: 0.2em;
+  }
+}
 
 .erase {
   margin-top: 6.55em;
-  margin-left: 0.75em; }
+  margin-left: 0.75em;
+}
 
 .locate {
   margin-top: 2em;
-  margin-left: -3.25em; }
-  .locate button {
-    margin-right: 3em; }
+  margin-left: -3.25em;
+
+  button {
+    margin-right: 3em;
+  }
+}
 
 .record-play {
   margin-left: -4em;
-  margin-top: 1.5em; }
-  .record-play div {
-    margin-right: 0.3em; }
-  .record-play .note-var-led {
+  margin-top: 1.5em;
+
+  div {
+    margin-right: 0.3em;
+  }
+
+  .note-var-led {
     margin-bottom: 0.1em;
     margin-right: 0;
-    display: inline-block; }
-  .record-play button {
+    display: inline-block;
+  }
+
+  button {
     height: 2.5em;
-    width: 3em; }
-  .record-play .red {
-    background-color: #97201c; }
+    width: 3em;
+  }
+
+  .red {
+    background-color: #97201c;
+  }
+}
