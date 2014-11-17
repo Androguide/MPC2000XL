@@ -1,4 +1,12 @@
 $ ->
+    # Scale the MPC if it is too high for the current display
+    windowHeight = $(window).height()
+    MPCHeight = $('.mpc-2000xl').height()
+    if windowHeight < MPCHeight
+        ratio = MPCHeight / windowHeight
+        if ratio > 1
+            $('.mpc-2000xl').css('zoom', '60%')
+
     # Data Wheel Binding
     deg = 0
     wheel = $('.wheel')
@@ -17,9 +25,9 @@ $ ->
     recDeg = 0
     recordKnob = $('.record-knob')
     recordKnob.bind "mousewheel", (e) ->
-        if e.originalEvent.wheelDelta / 120 > 0
+        if e.originalEvent.wheelDelta / 120 > 0 && recDeg + 10 <= 150
             recDeg += 10
-        else
+        else if recDeg - 10 >= -150
             recDeg -= 10
 
         if recDeg >= -150 && recDeg <= 150
@@ -32,9 +40,9 @@ $ ->
     volDeg = 0
     volumeKnob = $('.volume-knob')
     volumeKnob.bind "mousewheel", (e) ->
-        if e.originalEvent.wheelDelta / 120 > 0
+        if e.originalEvent.wheelDelta / 120 > 0 && volDeg + 10 <= 150
             volDeg += 10
-        else
+        else if volDeg - 10 >= -150
             volDeg -= 10
 
         if volDeg >= -150 && volDeg <= 150
