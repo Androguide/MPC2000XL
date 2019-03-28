@@ -205,13 +205,13 @@ div.data-wheel {
 }
 
 .drum-pads {
-  margin: 2em 1.3em 2em 13em;
+  margin: 2em 1.3em 2em 8em;
   padding: 1em 2em;
   background: #a5a9b0;
 }
 
 .top-right {
-  margin-left: 13em;
+  margin-left: 8em;
   margin-right: 1.2em;
   background: #a5a9b0;
   padding: 2em 2em 1em;
@@ -258,7 +258,7 @@ div.data-wheel {
 }
 
 .bank-buttons {
-  margin-left: 30em;
+  margin-left: 25em;
   margin-top: -4em;
   margin-bottom: 4em;
 
@@ -352,4 +352,8 @@ div.data-wheel {
   .red {
     background-color: #97201c;
   }
+}
+
+.right-half {
+    width: 55%;
 }
